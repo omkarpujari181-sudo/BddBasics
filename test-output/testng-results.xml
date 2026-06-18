@@ -1,79 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-16T12:45:23 IST" name="Default suite" finished-at="2026-06-16T12:45:24 IST" duration-ms="607">
+  <suite started-at="2026-06-18T18:56:07 IST" name="Default suite" finished-at="2026-06-18T18:56:07 IST" duration-ms="391">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerCls@3c41ed1d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerOutlineDatatable@22ff4249]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-06-16T12:45:23 IST" name="Default test" finished-at="2026-06-16T12:45:24 IST" duration-ms="607">
-      <class name="runner.RunnerCls">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RunnerCls@3c41ed1d]" started-at="2026-06-16T12:45:23 IST" name="setUpClass" finished-at="2026-06-16T12:45:24 IST" duration-ms="388" status="PASS">
+    <test started-at="2026-06-18T18:56:07 IST" name="Default test" finished-at="2026-06-18T18:56:07 IST" duration-ms="391">
+      <class name="runner.RunnerOutlineDatatable">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RunnerOutlineDatatable@22ff4249]" started-at="2026-06-18T18:56:07 IST" name="setUpClass" finished-at="2026-06-18T18:56:07 IST" duration-ms="209" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@fade1fc]]>
+                <![CDATA[org.testng.TestRunner@2a79d4b1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerCls@3c41ed1d]" started-at="2026-06-16T12:45:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-06-16T12:45:24 IST" duration-ms="142" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerOutlineDatatable@22ff4249]" started-at="2026-06-18T18:56:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-06-18T18:56:07 IST" duration-ms="134" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["As a valid user I want to get logged into my account when I provide valid usrename & password"]]>
+                <![CDATA["Using the data table & background in this scenario"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login Functionality"]]>
+                <![CDATA["I want to create a scenario outline where datatable is also being used"]]>
               </value>
             </param>
           </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'provides the static data as below used map here' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("provides the static data as below used map here")
+public void provides_the_static_data_as_below_used_map_here(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'provides the static data as below used map here' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("provides the static data as below used map here")
+public void provides_the_static_data_as_below_used_map_here(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+
+at ✽.provides the static data as below used map here(file:///C:/Users/o6193/eclipse-workspace/2026/BddBasics/src/test/resources/appFeatures/FormOutlineDatatable.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerCls@3c41ed1d]" started-at="2026-06-16T12:45:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-06-16T12:45:24 IST" duration-ms="5" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerOutlineDatatable@22ff4249]" started-at="2026-06-18T18:56:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-06-18T18:56:07 IST" duration-ms="5" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["System should validate if username or password is empty"]]>
+                <![CDATA["Using the data table & background in this scenario"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login Functionality"]]>
+                <![CDATA["I want to create a scenario outline where datatable is also being used"]]>
               </value>
             </param>
           </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'provides the static data as below used map here' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("provides the static data as below used map here")
+public void provides_the_static_data_as_below_used_map_here(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'provides the static data as below used map here' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("provides the static data as below used map here")
+public void provides_the_static_data_as_below_used_map_here(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+
+at ✽.provides the static data as below used map here(file:///C:/Users/o6193/eclipse-workspace/2026/BddBasics/src/test/resources/appFeatures/FormOutlineDatatable.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerCls@3c41ed1d]" started-at="2026-06-16T12:45:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-06-16T12:45:24 IST" duration-ms="6" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["System should validate if username or password is empty"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.RunnerCls@3c41ed1d]" started-at="2026-06-16T12:45:24 IST" name="tearDownClass" finished-at="2026-06-16T12:45:24 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.RunnerOutlineDatatable@22ff4249]" started-at="2026-06-18T18:56:07 IST" name="tearDownClass" finished-at="2026-06-18T18:56:07 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runner.RunnerCls -->
+      </class> <!-- runner.RunnerOutlineDatatable -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

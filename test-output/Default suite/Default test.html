@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jun 16 12:45:23 IST 2026</td>
+<td>Started on:</td><td>Thu Jun 18 18:56:07 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (607 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (391 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,20 +76,81 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.RunnerCls.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerCls<br>Test method: Runs Cucumber Scenarios<br>Parameters: "System should validate if username or password is empty", "Login Functionality"</td>
-<td></td>
+<td title='runner.RunnerOutlineDatatable.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerOutlineDatatable<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Using the data table & background in this scenario", "I want to create a scenario outline where datatable is also being used"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;provides the static data as below used map here&apos; is undefined.
+You can implement this step using the snippet(s) below:
+
+@When(&quot;provides the static data as below used map here&quot;)
+public void provides_the_static_data_as_below_used_map_here(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List&lt;E&gt;, List&lt;List&lt;E&gt;&gt;, List&lt;Map&lt;K,V&gt;&gt;, Map&lt;K,V&gt; or
+    // Map&lt;K, List&lt;V&gt;&gt;. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.provides the static data as below used map here(file:///C:/Users/o6193/eclipse-workspace/2026/BddBasics/src/test/resources/appFeatures/FormOutlineDatatable.feature:9)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2091072548", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2091072548'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;provides the static data as below used map here&apos; is undefined.
+You can implement this step using the snippet(s) below:
+
+@When(&quot;provides the static data as below used map here&quot;)
+public void provides_the_static_data_as_below_used_map_here(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List&lt;E&gt;, List&lt;List&lt;E&gt;&gt;, List&lt;Map&lt;K,V&gt;&gt;, Map&lt;K,V&gt; or
+    // Map&lt;K, List&lt;V&gt;&gt;. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.provides the static data as below used map here(file:///C:/Users/o6193/eclipse-workspace/2026/BddBasics/src/test/resources/appFeatures/FormOutlineDatatable.feature:9)
+</pre></div></td>
 <td>0</td>
-<td>runner.RunnerCls@3c41ed1d</td></tr>
+<td>runner.RunnerOutlineDatatable@22ff4249</td></tr>
 <tr>
-<td title='runner.RunnerCls.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerCls<br>Test method: Runs Cucumber Scenarios<br>Parameters: "System should validate if username or password is empty", "Login Functionality"</td>
-<td></td>
+<td title='runner.RunnerOutlineDatatable.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerOutlineDatatable<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Using the data table & background in this scenario", "I want to create a scenario outline where datatable is also being used"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;provides the static data as below used map here&apos; is undefined.
+You can implement this step using the snippet(s) below:
+
+@When(&quot;provides the static data as below used map here&quot;)
+public void provides_the_static_data_as_below_used_map_here(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List&lt;E&gt;, List&lt;List&lt;E&gt;&gt;, List&lt;Map&lt;K,V&gt;&gt;, Map&lt;K,V&gt; or
+    // Map&lt;K, List&lt;V&gt;&gt;. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.provides the static data as below used map here(file:///C:/Users/o6193/eclipse-workspace/2026/BddBasics/src/test/resources/appFeatures/FormOutlineDatatable.feature:9)
+</pre></div><a href='#' onClick='toggleBox("stack-trace460741164", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace460741164'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;provides the static data as below used map here&apos; is undefined.
+You can implement this step using the snippet(s) below:
+
+@When(&quot;provides the static data as below used map here&quot;)
+public void provides_the_static_data_as_below_used_map_here(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List&lt;E&gt;, List&lt;List&lt;E&gt;&gt;, List&lt;Map&lt;K,V&gt;&gt;, Map&lt;K,V&gt; or
+    // Map&lt;K, List&lt;V&gt;&gt;. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.provides the static data as below used map here(file:///C:/Users/o6193/eclipse-workspace/2026/BddBasics/src/test/resources/appFeatures/FormOutlineDatatable.feature:9)
+</pre></div></td>
 <td>0</td>
-<td>runner.RunnerCls@3c41ed1d</td></tr>
-<tr>
-<td title='runner.RunnerCls.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerCls<br>Test method: Runs Cucumber Scenarios<br>Parameters: "As a valid user I want to get logged into my account when I provide valid usrename & password", "Login Functionality"</td>
-<td></td>
-<td>0</td>
-<td>runner.RunnerCls@3c41ed1d</td></tr>
+<td>runner.RunnerOutlineDatatable@22ff4249</td></tr>
 </table><p>
 </body>
 </html>
