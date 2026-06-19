@@ -25,8 +25,34 @@ public class StepDefOutlineDatatabale
 	   
 	}
 	
+	@When("provide the static data as below used List here")
+	public void provide_the_static_data_as_below_used_list_here(DataTable dataTable) 
+	{
+		
+	/*	for (List<String> row : dataTable.asLists()) 
+		{
+		    for (String value : row)
+		    {
+		        System.out.println(value);
+		    }
+		}*/
+		
+		
+	 List<List<String>> ls =  dataTable.asLists();
+	 for (int i = 0 ; i<ls.size();i++)
+	 {
+		List <String> data = ls.get(i);
+		
+		for (String str : data)
+		{
+			System.out.println(str);
+		}
+	 }
+	 
+	}
 	
-	@When("provides the static data as below")
+	
+	@When("provides the static data as below used map here")
 	public void provides_the_static_data_as_below(DataTable dataTable) 
 	{
 		List <Map <String, String>> data = dataTable.asMaps();
@@ -64,6 +90,9 @@ public class StepDefOutlineDatatabale
 	public void sutudents_marks_get_entered() {
 	  System.out.println("form filled");
 	}
+	
+	
+
 
 
 }
