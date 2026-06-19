@@ -20,6 +20,7 @@ And provides the grade obtained for the subject "<English>" , "<Marathi>" in sta
 And clicks on save button 
 Then sutudents marks get entered
 
+
 Examples:
 |standard |English | Marathi |
 |3 | A | A+ |
