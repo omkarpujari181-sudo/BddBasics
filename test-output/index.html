@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\o6193\AppData\Local\Temp\testng-eclipse-1850618732\testng-customsuite.xml</span>
+                    <span>C:\Users\o6193\AppData\Local\Temp\testng-eclipse-1028828650\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,26 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content failed suite-Default_suite">
+                    <div class="method-list-content passed suite-Default_suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="runner.RunnerOutlineDatatable" class="method navigator-link" hash-for-method="runScenario(&quot;Using the data table &amp; background in this scenario&quot;, &quot;I want to create a scenario outline where dat...)">runScenario("Using the data table & background in this scenario", "I want to create a scenario outline where dat...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="runner.RunnerOutlineDatatable" class="method navigator-link" hash-for-method="runScenario(&quot;Using the data table &amp; background in this scenario&quot;, &quot;I want to create a scenario outline where dat...)">runScenario("Using the data table & background in this scenario", "I want to create a scenario outline where dat...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -123,9 +123,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
+          <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">runner.RunnerOutlineDatatable</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -135,24 +135,6 @@
                   </a> <!-- runScenario("Using the data table & background in this scenario", "I want to create a scenario outline where dat...) -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Using the data table & background in this scenario","I want to create a scenario outline where datatable is also being used")</span>
-                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;provides the static data as below used map here&apos; is undefined.
-You can implement this step using the snippet(s) below:
-
-@When(&quot;provides the static data as below used map here&quot;)
-public void provides_the_static_data_as_below_used_map_here(io.cucumber.datatable.DataTable dataTable) {
-    // Write code here that turns the phrase above into concrete actions
-    // For automatic transformation, change DataTable to one of
-    // E, List&lt;E&gt;, List&lt;List&lt;E&gt;&gt;, List&lt;Map&lt;K,V&gt;&gt;, Map&lt;K,V&gt; or
-    // Map&lt;K, List&lt;V&gt;&gt;. E,K,V must be a String, Integer, Float,
-    // Double, Byte, Short, Long, BigInteger or BigDecimal.
-    //
-    // For other transformations you can register a DataTableType.
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.provides the static data as below used map here(file:///C:/Users/o6193/eclipse-workspace/2026/BddBasics/src/test/resources/appFeatures/FormOutlineDatatable.feature:9)
-
-</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -163,34 +145,16 @@ public void provides_the_static_data_as_below_used_map_here(io.cucumber.datatabl
                   </a> <!-- runScenario("Using the data table & background in this scenario", "I want to create a scenario outline where dat...) -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Using the data table & background in this scenario","I want to create a scenario outline where datatable is also being used")</span>
-                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;provides the static data as below used map here&apos; is undefined.
-You can implement this step using the snippet(s) below:
-
-@When(&quot;provides the static data as below used map here&quot;)
-public void provides_the_static_data_as_below_used_map_here(io.cucumber.datatable.DataTable dataTable) {
-    // Write code here that turns the phrase above into concrete actions
-    // For automatic transformation, change DataTable to one of
-    // E, List&lt;E&gt;, List&lt;List&lt;E&gt;&gt;, List&lt;Map&lt;K,V&gt;&gt;, Map&lt;K,V&gt; or
-    // Map&lt;K, List&lt;V&gt;&gt;. E,K,V must be a String, Integer, Float,
-    // Double, Byte, Short, Long, BigInteger or BigDecimal.
-    //
-    // For other transformations you can register a DataTableType.
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.provides the static data as below used map here(file:///C:/Users/o6193/eclipse-workspace/2026/BddBasics/src/test/resources/appFeatures/FormOutlineDatatable.feature:9)
-
-</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
+          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\o6193\AppData\Local\Temp\testng-eclipse-1850618732\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\o6193\AppData\Local\Temp\testng-eclipse-1028828650\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -251,16 +215,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runner.RunnerOutlineDatatable')
-data.setCell(0, 3, 134);
+data.setCell(0, 3, 129);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'runner.RunnerOutlineDatatable')
-data.setCell(1, 3, 5);
+data.setCell(1, 3, 6);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 139 ms</span>
+              <span class="suite-total-time">Total running time: 135 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -288,24 +252,20 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">runner.RunnerOutlineDatatable</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@2a79d4b1)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@616fe72b)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">runScenario("Using the data table & background in this scenario", "I want to create a scenario outline where dat...)</span>
-                <span class="method-start">218 ms</span>
+                <span class="method-start">253 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">runScenario("Using the data table & background in this scenario", "I want to create a scenario outline where dat...)</span>
-                <span class="method-start">358 ms</span>
+                <span class="method-start">389 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">366 ms</span>
+                <span class="method-start">399 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

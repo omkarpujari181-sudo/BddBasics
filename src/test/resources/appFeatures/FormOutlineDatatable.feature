@@ -5,6 +5,10 @@ Background: Given user is at the base page
 Scenario Outline: Using the data table & background in this scenario
 
 When user clicks on "add" button
+And provide the static data as below used List here
+| Col1 | Col2 | Col3|
+| R1C1 | R1C2 | R1C3|
+| R2C1 | R2C2 | R2C3|
 
 And provides the static data as below used map here
 
