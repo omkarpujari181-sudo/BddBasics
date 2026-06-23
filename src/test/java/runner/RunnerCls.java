@@ -6,8 +6,9 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions
 	(
 			features = {"src\\test\\resources\\appFeatures\\Login.feature"},
-			glue = {"steps"},
-			plugin = {"pretty"}
+			glue = {"steps","myHooks"},
+			plugin = {"pretty"},
+			tags = "@smoke"
 	)
 
 
@@ -18,3 +19,4 @@ import io.cucumber.testng.CucumberOptions;
 
 
 }
+
