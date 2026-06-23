@@ -2,7 +2,7 @@ Feature: Login Functionality
 Backgorund: Given user is at login page 
 
 
-
+@smoke
 Scenario: As a valid user I want to get logged into my account when I provide valid usrename & password
 
 When user provide correct "username" and "password"

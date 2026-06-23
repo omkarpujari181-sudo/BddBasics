@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\o6193\AppData\Local\Temp\testng-eclipse--764736167\testng-customsuite.xml</span>
+                    <span>C:\Users\o6193\AppData\Local\Temp\testng-eclipse--261880892\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,12 +103,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.RunnerOutlineDatatable" class="method navigator-link" hash-for-method="runScenario(&quot;Using the data table &amp; background in this scenario&quot;, &quot;I want to create a scenario outline where dat...)">runScenario("Using the data table & background in this scenario", "I want to create a scenario outline where dat...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.RunnerOutlineDatatable" class="method navigator-link" hash-for-method="runScenario(&quot;Using the data table &amp; background in this scenario&quot;, &quot;I want to create a scenario outline where dat...)">runScenario("Using the data table & background in this scenario", "I want to create a scenario outline where dat...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runner.RunnerCls" class="method navigator-link" hash-for-method="runScenario(&quot;As a valid user I want to get logged into my account when I provide valid usrename &amp; password&quot;, &quot;Lo...)">runScenario("As a valid user I want to get logged into my account when I provide valid usrename & password", "Lo...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -126,25 +121,15 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">runner.RunnerOutlineDatatable</span>
+              <span class="class-name">runner.RunnerCls</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Using the data table &amp; background in this scenario&quot;, &quot;I want to create a scenario outline where dat...)">
-                  </a> <!-- runScenario("Using the data table & background in this scenario", "I want to create a scenario outline where dat...) -->
+                  <a name="runScenario(&quot;As a valid user I want to get logged into my account when I provide valid usrename &amp; password&quot;, &quot;Lo...)">
+                  </a> <!-- runScenario("As a valid user I want to get logged into my account when I provide valid usrename & password", "Lo...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Using the data table & background in this scenario","I want to create a scenario outline where datatable is also being used")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Using the data table &amp; background in this scenario&quot;, &quot;I want to create a scenario outline where dat...)">
-                  </a> <!-- runScenario("Using the data table & background in this scenario", "I want to create a scenario outline where dat...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Using the data table & background in this scenario","I want to create a scenario outline where datatable is also being used")</span>
+                  <span class="parameters">("As a valid user I want to get logged into my account when I provide valid usrename & password","Login Functionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -154,7 +139,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\o6193\AppData\Local\Temp\testng-eclipse--764736167\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\o6193\AppData\Local\Temp\testng-eclipse--261880892\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -163,7 +148,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;runner.RunnerOutlineDatatable&quot;/&gt;
+      &lt;class name=&quot;runner.RunnerCls&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -211,20 +196,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
-data.setCell(0, 2, 'runner.RunnerOutlineDatatable')
-data.setCell(0, 3, 98);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'runScenario')
-data.setCell(1, 2, 'runner.RunnerOutlineDatatable')
-data.setCell(1, 3, 14);
+data.setCell(0, 2, 'runner.RunnerCls')
+data.setCell(0, 3, 93);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 112 ms</span>
+              <span class="suite-total-time">Total running time: 93 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -250,24 +231,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">runner.RunnerOutlineDatatable</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">runner.RunnerCls</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@3241713e)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@4bff64c2)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Using the data table & background in this scenario", "I want to create a scenario outline where dat...)</span>
-                <span class="method-start">495 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Using the data table & background in this scenario", "I want to create a scenario outline where dat...)</span>
-                <span class="method-start">597 ms</span>
+                <span class="method-name">runScenario("As a valid user I want to get logged into my account when I provide valid usrename & password", "Lo...)</span>
+                <span class="method-start">224 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">616 ms</span>
+                <span class="method-start">324 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
